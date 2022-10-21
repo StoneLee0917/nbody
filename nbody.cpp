@@ -104,7 +104,7 @@ void advance(body state[BODIES_COUNT], double dt) {
     //iteration begins from i[0][1] why?: 01 02 03 04 05 11 12 13 14 15...
     for (unsigned int i = 0; i < BODIES_COUNT; ++i) {
         for (unsigned int j = i + 1; j < BODIES_COUNT; ++j) {
-            rij[i][j] = state[i].position - state[j].position;;
+            rij[i][j] = state[i].position - state[j].position;
         }
     }
 
